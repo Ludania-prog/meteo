@@ -9,6 +9,12 @@ function refreshweather(response) {
   let timeElement = document.querySelector("#time");
   let timestamp = (response.data.dt + response.data.timezone) * 1000;
   let date = new Date(timestamp);
+  let iconCode = response.data.weather[0].icon;
+  let iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.innerHTML = `<img src="${iconUrl}" alt="${response.data.weather[0].description}">`;
 
   console.log(response.data);
   console.log(response.data.wind.speed);
