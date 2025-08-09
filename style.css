@@ -14,6 +14,7 @@ body {
 a {
   color: fuchsia;
 }
+
 header {
   border-bottom: 1px solid pink;
   padding: 30px 0;
@@ -36,9 +37,52 @@ header {
   color: white;
 }
 
+main {
+  padding: 30px 0;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-app-city {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 48px;
+}
+.weather-app-details {
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 20px;
+  font-weight: 500px;
+}
+.weather-app-details strong {
+  color: fuchsia;
+}
+
+.weather-app-temperature-container {
+  display: flex;
+}
+
+.weather-app-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+.weather-app-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.weather-app-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
 footer {
   border-top: 1px solid pink;
   padding: 30px 0 0 0;
-  text-align: center;
-  font-size: 13px;
 }
+text-align: center;
+font-weight: bold;
+font-size: 13px;
+color: rgb(0, 0, 0, 0.6);
